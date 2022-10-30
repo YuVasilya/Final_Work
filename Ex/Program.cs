@@ -25,13 +25,14 @@ for (int i = 0; i < size; i++)
         if (j < count)
         {
             newarray[j] = array[i];
+            Console.Write(newarray[i] + ", ");
         }
         j++;
     }
 }
 
 //5
-for (int i = 0; i < count; i++)
-{
-    Console.Write(newarray[i] + ", ");
-}
+// for (int i = 0; i < count; i++)
+// {
+//     Console.Write(newarray[i] + ", ");
+// }
