@@ -1,9 +1,10 @@
 ﻿Console.Clear();
-
+//1
 string[] array = { "Hello", "2", "world", ":-)" };
 int size = array.Length;
-int count = 0;
 
+//2
+int count = 0;
 for (int i = 0; i < size; i++)
 {
     if (array[i].Length <= 3)
@@ -12,7 +13,10 @@ for (int i = 0; i < size; i++)
     }
 }
 
+//3
 string[] newarray = new string[count];
+
+//4
 int j = 0;
 for (int i = 0; i < size; i++)
 {
@@ -21,9 +25,13 @@ for (int i = 0; i < size; i++)
         if (j < count)
         {
             newarray[j] = array[i];
-            Console.Write(newarray[j]+", ");
-        } 
-        j++;       
-    }    
+        }
+        j++;
+    }
 }
 
+//5
+for (int i = 0; i < count; i++)
+{
+    Console.Write(newarray[i] + ", ");
+}
